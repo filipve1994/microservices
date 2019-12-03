@@ -1,10 +1,46 @@
 server:
-  port: ${port:8081}
+  port: ${port:8071}
 spring:
   application:
     name: ms-user-service
-  cloud:
-    config:
-      discovery:
-        enabled: true
-        service-id: ms-config-server
+#  cloud:
+#    config:
+#      discovery:
+#        enabled: true
+#        service-id: ms-config-server
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      base-path: /actuator
+  endpoint:
+    info:
+      enabled: true
+    caches:
+      enabled: true
+    beans:
+      enabled: true
+    bindings:
+      enabled: true
+    channels:
+      enabled: true
+    conditions:
+      enabled: true
+    configprops:
+      enabled: true
+    env:
+      enabled: true
+    features:
+      enabled: true
+    health:
+      enabled: true
+    httptrace:
+      enabled: true
+    logfile:
+      enabled: true
+    loggers:
+      enabled: true
+    mappings:
+      enabled: true
+    metrics:
+      enabled: true

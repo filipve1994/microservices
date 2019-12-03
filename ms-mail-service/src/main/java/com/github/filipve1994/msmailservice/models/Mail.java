@@ -1,6 +1,5 @@
 package com.github.filipve1994.msmailservice.models;
 
-import com.netflix.hystrix.HystrixCommand.Setter;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;

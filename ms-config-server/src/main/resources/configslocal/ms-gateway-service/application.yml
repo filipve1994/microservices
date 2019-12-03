@@ -1,15 +1,8 @@
-spring:
-  application:
-    name: ms-gateway-service
 zuul:
   routes:
     ms-user-service: /api/user/**
     ms-auth-server: auth/**
-server:
-  port: 8099
+
 management:
   endpoints:
     enabled-by-default: true
-    web:
-      exposure:
-        include: '*'
